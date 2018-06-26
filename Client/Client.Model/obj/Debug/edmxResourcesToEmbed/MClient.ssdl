@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClientModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ClientModelStoreContainer">
+    <EntitySet Name="Operator" EntityType="ClientModel.Store.Operator" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="ClientModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Role" EntityType="ClientModel.Store.Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Office" EntityType="ClientModel.Store.Office" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Menu" EntityType="ClientModel.Store.Menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OperatorMenuAuthority" EntityType="ClientModel.Store.OperatorMenuAuthority" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_OperatorMenuAuthority_Menu" Association="ClientModel.Store.FK_OperatorMenuAuthority_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="OperatorMenuAuthority" EntitySet="OperatorMenuAuthority" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Operator">
+    <Key>
+      <PropertyRef Name="Operatorid" />
+    </Key>
+    <Property Name="Operatorid" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Roleid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Userid" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="OperatorName" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="CodeNo" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Userid" />
+    </Key>
+    <Property Name="Userid" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="UserName" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="CodeNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="SpellNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="CustomNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="StrokeNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="Sex" Type="varchar" Nullable="true" MaxLength="4" />
+    <Property Name="Birthday" Type="datetime" Nullable="true" />
+    <Property Name="Nation" Type="varchar" Nullable="true" MaxLength="12" />
+    <Property Name="Diploma" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="Officeid" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="VestDept" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="Duty" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="Role" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="LaborageNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="ExamineMoney" Type="decimal" Nullable="true" Precision="18" Scale="2" />
+    <Property Name="RegisterLimitNo" Type="int" Nullable="true" />
+    <Property Name="BespeakLimitNo" Type="int" Nullable="true" />
+    <Property Name="PledgeMoney" Type="decimal" Nullable="true" Precision="18" Scale="2" />
+    <Property Name="Workkind" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="PrescriptionRight" Type="int" Nullable="false" />
+    <Property Name="ExamineName" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="StopFlag" Type="int" Nullable="false" />
+    <Property Name="StopOperator" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="StopDate" Type="datetime" Nullable="true" />
+    <Property Name="Remark" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="TELEPHONE" Type="varchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Roleid" />
+    </Key>
+    <Property Name="Roleid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Role1" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CodeNo" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="SpellNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="CustomNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="StrokeNo" Type="varchar" Nullable="true" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="Office">
+    <Key>
+      <PropertyRef Name="Officeid" />
+    </Key>
+    <Property Name="Officeid" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Office1" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CodeNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="SpellNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="CustomNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="StrokeNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Department" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="Parentid" Type="int" Nullable="true" />
+    <Property Name="hasChild" Type="int" Nullable="false" />
+    <Property Name="BedAmount" Type="int" Nullable="true" />
+    <Property Name="DiseaseArea" Type="varchar" Nullable="true" MaxLength="12" />
+    <Property Name="OfficeType" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Workkind" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="LimitFund" Type="int" Nullable="true" />
+    <Property Name="ServiceObject" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="Link" Type="int" Nullable="true" />
+    <Property Name="OfficeAddress" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Explanation" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="StopFlag" Type="int" Nullable="false" />
+    <Property Name="StopDate" Type="datetime" Nullable="true" />
+    <Property Name="StopOperator" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="position" Type="varchar" Nullable="true" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="Nodeid" />
+    </Key>
+    <Property Name="Nodeid" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NodeName" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="ParentNode" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="isEndNode" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="Pluginid" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="Commentary" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="Disporder" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="type" Type="int" Nullable="false" />
+    <Property Name="image" Type="varbinary(max)" Nullable="true" />
+    <Property Name="IsChoose" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="OperatorMenuAuthority">
+    <Key>
+      <PropertyRef Name="Operatorid" />
+      <PropertyRef Name="Privid" />
+    </Key>
+    <Property Name="Operatorid" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="Privid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Nodeid" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ParentNode" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="isEndNode" Type="varchar" Nullable="true" MaxLength="2" />
+  </EntityType>
+  <Association Name="FK_OperatorMenuAuthority_Menu">
+    <End Role="Menu" Type="ClientModel.Store.Menu" Multiplicity="1" />
+    <End Role="OperatorMenuAuthority" Type="ClientModel.Store.OperatorMenuAuthority" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="Nodeid" />
+      </Principal>
+      <Dependent Role="OperatorMenuAuthority">
+        <PropertyRef Name="Nodeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

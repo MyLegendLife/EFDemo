@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ClientModelStoreContainer" CdmEntityContainer="ClientEntities">
+    <EntitySetMapping Name="Operator">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Operator)">
+        <MappingFragment StoreEntitySet="Operator">
+          <ScalarProperty Name="Operatorid" ColumnName="Operatorid" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Roleid" ColumnName="Roleid" />
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="CodeNo" ColumnName="CodeNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Users)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CodeNo" ColumnName="CodeNo" />
+          <ScalarProperty Name="SpellNo" ColumnName="SpellNo" />
+          <ScalarProperty Name="CustomNo" ColumnName="CustomNo" />
+          <ScalarProperty Name="StrokeNo" ColumnName="StrokeNo" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+          <ScalarProperty Name="Diploma" ColumnName="Diploma" />
+          <ScalarProperty Name="Officeid" ColumnName="Officeid" />
+          <ScalarProperty Name="VestDept" ColumnName="VestDept" />
+          <ScalarProperty Name="Duty" ColumnName="Duty" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="LaborageNo" ColumnName="LaborageNo" />
+          <ScalarProperty Name="ExamineMoney" ColumnName="ExamineMoney" />
+          <ScalarProperty Name="RegisterLimitNo" ColumnName="RegisterLimitNo" />
+          <ScalarProperty Name="BespeakLimitNo" ColumnName="BespeakLimitNo" />
+          <ScalarProperty Name="PledgeMoney" ColumnName="PledgeMoney" />
+          <ScalarProperty Name="Workkind" ColumnName="Workkind" />
+          <ScalarProperty Name="PrescriptionRight" ColumnName="PrescriptionRight" />
+          <ScalarProperty Name="ExamineName" ColumnName="ExamineName" />
+          <ScalarProperty Name="StopFlag" ColumnName="StopFlag" />
+          <ScalarProperty Name="StopOperator" ColumnName="StopOperator" />
+          <ScalarProperty Name="StopDate" ColumnName="StopDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="TELEPHONE" ColumnName="TELEPHONE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Role)">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Roleid" ColumnName="Roleid" />
+          <ScalarProperty Name="Role1" ColumnName="Role1" />
+          <ScalarProperty Name="CodeNo" ColumnName="CodeNo" />
+          <ScalarProperty Name="SpellNo" ColumnName="SpellNo" />
+          <ScalarProperty Name="CustomNo" ColumnName="CustomNo" />
+          <ScalarProperty Name="StrokeNo" ColumnName="StrokeNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Office">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Office)">
+        <MappingFragment StoreEntitySet="Office">
+          <ScalarProperty Name="Officeid" ColumnName="Officeid" />
+          <ScalarProperty Name="Office1" ColumnName="Office1" />
+          <ScalarProperty Name="CodeNo" ColumnName="CodeNo" />
+          <ScalarProperty Name="SpellNo" ColumnName="SpellNo" />
+          <ScalarProperty Name="CustomNo" ColumnName="CustomNo" />
+          <ScalarProperty Name="StrokeNo" ColumnName="StrokeNo" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Parentid" ColumnName="Parentid" />
+          <ScalarProperty Name="hasChild" ColumnName="hasChild" />
+          <ScalarProperty Name="BedAmount" ColumnName="BedAmount" />
+          <ScalarProperty Name="DiseaseArea" ColumnName="DiseaseArea" />
+          <ScalarProperty Name="OfficeType" ColumnName="OfficeType" />
+          <ScalarProperty Name="Workkind" ColumnName="Workkind" />
+          <ScalarProperty Name="LimitFund" ColumnName="LimitFund" />
+          <ScalarProperty Name="ServiceObject" ColumnName="ServiceObject" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="OfficeAddress" ColumnName="OfficeAddress" />
+          <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+          <ScalarProperty Name="StopFlag" ColumnName="StopFlag" />
+          <ScalarProperty Name="StopDate" ColumnName="StopDate" />
+          <ScalarProperty Name="StopOperator" ColumnName="StopOperator" />
+          <ScalarProperty Name="position" ColumnName="position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Menu)">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="Nodeid" ColumnName="Nodeid" />
+          <ScalarProperty Name="NodeName" ColumnName="NodeName" />
+          <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+          <ScalarProperty Name="isEndNode" ColumnName="isEndNode" />
+          <ScalarProperty Name="Pluginid" ColumnName="Pluginid" />
+          <ScalarProperty Name="Commentary" ColumnName="Commentary" />
+          <ScalarProperty Name="Disporder" ColumnName="Disporder" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="IsChoose" ColumnName="IsChoose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OperatorMenuAuthority">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.OperatorMenuAuthority)">
+        <MappingFragment StoreEntitySet="OperatorMenuAuthority">
+          <ScalarProperty Name="Operatorid" ColumnName="Operatorid" />
+          <ScalarProperty Name="Privid" ColumnName="Privid" />
+          <ScalarProperty Name="Nodeid" ColumnName="Nodeid" />
+          <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+          <ScalarProperty Name="isEndNode" ColumnName="isEndNode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

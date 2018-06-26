@@ -1,0 +1,119 @@
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.exe
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\obj\Debug\Client.Properties.Resources.resources
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\obj\Debug\Client.exe
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\obj\Debug\Client.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\obj\Debug\Client.FmLoading.resources
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\obj\Debug\Client.FmLogin.resources
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\obj\Debug\Client.exe.licenses
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\obj\Debug\Client.FmMain.resources
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.BLL.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.IBLL.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\RD.Tools.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.IDAL.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.DALFactory.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\EntityFramework.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\RD.DB.Access.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\log4net.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Newtonsoft.Json.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.DAL.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Oracle.DataAccess.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.BLL.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.IBLL.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.Model.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\RD.Tools.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.IDAL.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.DALFactory.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\EntityFramework.xml
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\RD.DB.Access.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.DAL.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\zh-Hans\EntityFramework.resources.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\EntityFramework.SqlServer.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\EntityFramework.SqlServer.xml
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.exe.config
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client\bin\Debug\Client.Model.dll
+D:\我的文档\Documents\Visual Studio 2013\Projects\Client\Client\obj\Debug\Client.FormHome.resources
+D:\我的文档\Documents\Visual Studio 2013\Projects\Client\Client\bin\Debug\Client.Common.dll
+D:\我的文档\Documents\Visual Studio 2013\Projects\Client\Client\bin\Debug\Client.Common.pdb
+D:\我的文档\Documents\Visual Studio 2013\Projects\Client\Client\obj\Debug\Client.EditPwd.resources
+G:\迅雷下载\Client\Client\bin\Debug\Client.exe.config
+G:\迅雷下载\Client\Client\obj\Debug\Client.exe
+G:\迅雷下载\Client\Client\obj\Debug\Client.pdb
+G:\迅雷下载\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+G:\迅雷下载\Client\Client\obj\Debug\Client.EditPwd.resources
+G:\迅雷下载\Client\Client\obj\Debug\Client.FmLoading.resources
+G:\迅雷下载\Client\Client\obj\Debug\Client.FmLogin.resources
+G:\迅雷下载\Client\Client\obj\Debug\Client.FmMain.resources
+G:\迅雷下载\Client\Client\obj\Debug\Client.FormHome.resources
+G:\迅雷下载\Client\Client\obj\Debug\Client.Properties.Resources.resources
+G:\迅雷下载\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+G:\迅雷下载\Client\Client\bin\Debug\Client.exe
+G:\迅雷下载\Client\Client\bin\Debug\Client.pdb
+G:\迅雷下载\Client\Client\bin\Debug\Client.BLL.dll
+G:\迅雷下载\Client\Client\bin\Debug\Client.Common.dll
+G:\迅雷下载\Client\Client\bin\Debug\Client.IBLL.dll
+G:\迅雷下载\Client\Client\bin\Debug\Client.Model.dll
+G:\迅雷下载\Client\Client\bin\Debug\EntityFramework.dll
+G:\迅雷下载\Client\Client\bin\Debug\EntityFramework.SqlServer.dll
+G:\迅雷下载\Client\Client\bin\Debug\Client.IDAL.dll
+G:\迅雷下载\Client\Client\bin\Debug\Client.DALFactory.dll
+G:\迅雷下载\Client\Client\bin\Debug\RD.Tools.dll
+G:\迅雷下载\Client\Client\bin\Debug\Client.DAL.dll
+G:\迅雷下载\Client\Client\bin\Debug\RD.DB.Access.dll
+G:\迅雷下载\Client\Client\bin\Debug\log4net.dll
+G:\迅雷下载\Client\Client\bin\Debug\Newtonsoft.Json.dll
+G:\迅雷下载\Client\Client\bin\Debug\Oracle.DataAccess.dll
+G:\迅雷下载\Client\Client\bin\Debug\Client.BLL.pdb
+G:\迅雷下载\Client\Client\bin\Debug\Client.Common.pdb
+G:\迅雷下载\Client\Client\bin\Debug\Client.IBLL.pdb
+G:\迅雷下载\Client\Client\bin\Debug\Client.Model.pdb
+G:\迅雷下载\Client\Client\bin\Debug\EntityFramework.xml
+G:\迅雷下载\Client\Client\bin\Debug\EntityFramework.SqlServer.xml
+G:\迅雷下载\Client\Client\bin\Debug\Client.IDAL.pdb
+G:\迅雷下载\Client\Client\bin\Debug\Client.DALFactory.pdb
+G:\迅雷下载\Client\Client\bin\Debug\Client.DAL.pdb
+G:\迅雷下载\Client\Client\bin\Debug\RD.DB.Access.pdb
+G:\迅雷下载\Client\Client\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\迅雷下载\Client\Client\obj\Debug\Client.exe.licenses
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.exe.config
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.exe
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.pdb
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.BLL.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.Common.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.IBLL.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.Model.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\EntityFramework.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\EntityFramework.SqlServer.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.IDAL.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.DALFactory.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\RD.Tools.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.DAL.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\RD.DB.Access.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\log4net.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Newtonsoft.Json.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Oracle.DataAccess.dll
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.BLL.pdb
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.Common.pdb
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.IBLL.pdb
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.Model.pdb
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\EntityFramework.xml
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\EntityFramework.SqlServer.xml
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.IDAL.pdb
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.DALFactory.pdb
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\Client.DAL.pdb
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\RD.DB.Access.pdb
+E:\BaiduNetdiskDownload\Client\Client\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.EditPwd.resources
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.FmLoading.resources
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.FmLogin.resources
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.FmMain.resources
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.FormHome.resources
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.Properties.Resources.resources
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.exe.licenses
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.exe
+E:\BaiduNetdiskDownload\Client\Client\obj\Debug\Client.pdb

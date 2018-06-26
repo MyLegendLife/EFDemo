@@ -1,0 +1,21 @@
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Common\bin\Debug\Client.Common.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Common\bin\Debug\Client.Common.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Common\obj\Debug\Client.Common.Properties.Resources.resources
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Common\obj\Debug\Client.Common.csproj.GenerateResource.Cache
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Common\obj\Debug\Client.Common.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Common\obj\Debug\Client.Common.pdb
+D:\我的文档\Documents\Visual Studio 2013\Projects\Client\Client.Common\obj\Debug\Client.Common.csprojResolveAssemblyReference.cache
+D:\我的文档\Documents\Visual Studio 2013\Projects\Client\Client.Common\obj\Debug\Client.Common.dll.licenses
+G:\迅雷下载\Client\Client.Common\obj\Debug\Client.Common.Properties.Resources.resources
+G:\迅雷下载\Client\Client.Common\obj\Debug\Client.Common.csproj.GenerateResource.Cache
+G:\迅雷下载\Client\Client.Common\obj\Debug\Client.Common.dll
+G:\迅雷下载\Client\Client.Common\obj\Debug\Client.Common.pdb
+G:\迅雷下载\Client\Client.Common\bin\Debug\Client.Common.dll
+G:\迅雷下载\Client\Client.Common\bin\Debug\Client.Common.pdb
+E:\BaiduNetdiskDownload\Client\Client.Common\bin\Debug\Client.Common.dll
+E:\BaiduNetdiskDownload\Client\Client.Common\bin\Debug\Client.Common.pdb
+E:\BaiduNetdiskDownload\Client\Client.Common\obj\Debug\Client.Common.csprojResolveAssemblyReference.cache
+E:\BaiduNetdiskDownload\Client\Client.Common\obj\Debug\Client.Common.Properties.Resources.resources
+E:\BaiduNetdiskDownload\Client\Client.Common\obj\Debug\Client.Common.csproj.GenerateResource.Cache
+E:\BaiduNetdiskDownload\Client\Client.Common\obj\Debug\Client.Common.dll
+E:\BaiduNetdiskDownload\Client\Client.Common\obj\Debug\Client.Common.pdb

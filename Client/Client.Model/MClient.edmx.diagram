@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fcbae8779fc9402ebb45b23469101eef" Name="Diagram1">
+        <EntityTypeShape EntityType="ClientModel.Operator" Width="1.5" PointX="4.625" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClientModel.Users" Width="1.5" PointX="2.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClientModel.Role" Width="1.5" PointX="4.625" PointY="0.625" />
+        <AssociationConnector Association="ClientModel.OperatorUsers" />
+        <EntityTypeShape EntityType="ClientModel.Office" Width="1.5" PointX="0.5" PointY="0.625" />
+        <EntityTypeShape EntityType="ClientModel.Menu" Width="2.5" PointX="6.625" PointY="3.375" />
+        <EntityTypeShape EntityType="ClientModel.OperatorMenuAuthority" Width="2.125" PointX="6.75" PointY="0.625" />
+        <AssociationConnector Association="ClientModel.FK_OperatorMenuAuthority_Menu" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

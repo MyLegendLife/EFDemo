@@ -1,0 +1,46 @@
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\Client.Model.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\EntityFramework.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\EntityFramework.SqlServer.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\RD.Tools.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\RD.DB.Access.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\log4net.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\Newtonsoft.Json.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\Oracle.DataAccess.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\EntityFramework.xml
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\EntityFramework.SqlServer.xml
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\RD.Tools.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\RD.DB.Access.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\obj\Debug\Client.Model.Properties.Resources.resources
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\obj\Debug\Client.Model.csproj.GenerateResource.Cache
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\obj\Debug\Client.Model.pdb
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\obj\Debug\Client.Model.csprojResolveAssemblyReference.cache
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\Client.Model.dll.config
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\bin\Debug\Client.Model.dll
+d:\我的文档\documents\visual studio 2013\Projects\Client\Client.Model\obj\Debug\Client.Model.dll
+G:\迅雷下载\Client\Client.Model\bin\Debug\Client.Model.dll.config
+G:\迅雷下载\Client\Client.Model\bin\Debug\Client.Model.dll
+G:\迅雷下载\Client\Client.Model\bin\Debug\Client.Model.pdb
+G:\迅雷下载\Client\Client.Model\bin\Debug\EntityFramework.dll
+G:\迅雷下载\Client\Client.Model\bin\Debug\EntityFramework.SqlServer.dll
+G:\迅雷下载\Client\Client.Model\bin\Debug\EntityFramework.xml
+G:\迅雷下载\Client\Client.Model\bin\Debug\EntityFramework.SqlServer.xml
+G:\迅雷下载\Client\Client.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\迅雷下载\Client\Client.Model\obj\Debug\Client.Model.Properties.Resources.resources
+G:\迅雷下载\Client\Client.Model\obj\Debug\Client.Model.csproj.GenerateResource.Cache
+G:\迅雷下载\Client\Client.Model\obj\Debug\Client.Model.dll
+G:\迅雷下载\Client\Client.Model\obj\Debug\Client.Model.pdb
+G:\迅雷下载\Client\Client.Model\obj\Debug\Client.Model.csprojResolveAssemblyReference.cache
+E:\BaiduNetdiskDownload\Client\Client.Model\bin\Debug\Client.Model.dll.config
+E:\BaiduNetdiskDownload\Client\Client.Model\bin\Debug\Client.Model.dll
+E:\BaiduNetdiskDownload\Client\Client.Model\bin\Debug\Client.Model.pdb
+E:\BaiduNetdiskDownload\Client\Client.Model\bin\Debug\EntityFramework.dll
+E:\BaiduNetdiskDownload\Client\Client.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\BaiduNetdiskDownload\Client\Client.Model\bin\Debug\EntityFramework.xml
+E:\BaiduNetdiskDownload\Client\Client.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\BaiduNetdiskDownload\Client\Client.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\BaiduNetdiskDownload\Client\Client.Model\obj\Debug\Client.Model.csprojResolveAssemblyReference.cache
+E:\BaiduNetdiskDownload\Client\Client.Model\obj\Debug\Client.Model.Properties.Resources.resources
+E:\BaiduNetdiskDownload\Client\Client.Model\obj\Debug\Client.Model.csproj.GenerateResource.Cache
+E:\BaiduNetdiskDownload\Client\Client.Model\obj\Debug\Client.Model.dll
+E:\BaiduNetdiskDownload\Client\Client.Model\obj\Debug\Client.Model.pdb

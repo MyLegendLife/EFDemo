@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ClientModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ClientModelStoreContainer">
+    <EntitySet Name="Operator" EntityType="ClientModel.Store.Operator" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="ClientModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Role" EntityType="ClientModel.Store.Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Office" EntityType="ClientModel.Store.Office" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Menu" EntityType="ClientModel.Store.Menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OperatorMenuAuthority" EntityType="ClientModel.Store.OperatorMenuAuthority" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_OperatorMenuAuthority_Menu" Association="ClientModel.Store.FK_OperatorMenuAuthority_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="OperatorMenuAuthority" EntitySet="OperatorMenuAuthority" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Operator">
+    <Key>
+      <PropertyRef Name="Operatorid" />
+    </Key>
+    <Property Name="Operatorid" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Roleid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Userid" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="OperatorName" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="CodeNo" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Userid" />
+    </Key>
+    <Property Name="Userid" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="UserName" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="CodeNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="SpellNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="CustomNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="StrokeNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="Sex" Type="varchar" Nullable="true" MaxLength="4" />
+    <Property Name="Birthday" Type="datetime" Nullable="true" />
+    <Property Name="Nation" Type="varchar" Nullable="true" MaxLength="12" />
+    <Property Name="Diploma" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="Officeid" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="VestDept" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="Duty" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="Role" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="LaborageNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="ExamineMoney" Type="decimal" Nullable="true" Precision="18" Scale="2" />
+    <Property Name="RegisterLimitNo" Type="int" Nullable="true" />
+    <Property Name="BespeakLimitNo" Type="int" Nullable="true" />
+    <Property Name="PledgeMoney" Type="decimal" Nullable="true" Precision="18" Scale="2" />
+    <Property Name="Workkind" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="PrescriptionRight" Type="int" Nullable="false" />
+    <Property Name="ExamineName" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="StopFlag" Type="int" Nullable="false" />
+    <Property Name="StopOperator" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="StopDate" Type="datetime" Nullable="true" />
+    <Property Name="Remark" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="TELEPHONE" Type="varchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Roleid" />
+    </Key>
+    <Property Name="Roleid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Role1" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CodeNo" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="SpellNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="CustomNo" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="StrokeNo" Type="varchar" Nullable="true" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="Office">
+    <Key>
+      <PropertyRef Name="Officeid" />
+    </Key>
+    <Property Name="Officeid" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Office1" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CodeNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="SpellNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="CustomNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="StrokeNo" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Department" Type="varchar" Nullable="true" MaxLength="16" />
+    <Property Name="Parentid" Type="int" Nullable="true" />
+    <Property Name="hasChild" Type="int" Nullable="false" />
+    <Property Name="BedAmount" Type="int" Nullable="true" />
+    <Property Name="DiseaseArea" Type="varchar" Nullable="true" MaxLength="12" />
+    <Property Name="OfficeType" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Workkind" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="LimitFund" Type="int" Nullable="true" />
+    <Property Name="ServiceObject" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="Link" Type="int" Nullable="true" />
+    <Property Name="OfficeAddress" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Explanation" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="StopFlag" Type="int" Nullable="false" />
+    <Property Name="StopDate" Type="datetime" Nullable="true" />
+    <Property Name="StopOperator" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="position" Type="varchar" Nullable="true" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="Nodeid" />
+    </Key>
+    <Property Name="Nodeid" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NodeName" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="ParentNode" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="isEndNode" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="Pluginid" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="Commentary" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="Disporder" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="type" Type="int" Nullable="false" />
+    <Property Name="image" Type="varbinary(max)" Nullable="true" />
+    <Property Name="IsChoose" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="OperatorMenuAuthority">
+    <Key>
+      <PropertyRef Name="Operatorid" />
+      <PropertyRef Name="Privid" />
+    </Key>
+    <Property Name="Operatorid" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="Privid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Nodeid" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ParentNode" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="isEndNode" Type="varchar" Nullable="true" MaxLength="2" />
+  </EntityType>
+  <Association Name="FK_OperatorMenuAuthority_Menu">
+    <End Role="Menu" Type="ClientModel.Store.Menu" Multiplicity="1" />
+    <End Role="OperatorMenuAuthority" Type="ClientModel.Store.OperatorMenuAuthority" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="Nodeid" />
+      </Principal>
+      <Dependent Role="OperatorMenuAuthority">
+        <PropertyRef Name="Nodeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ClientModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Operator">
+          <Key>
+            <PropertyRef Name="Operatorid" />
+          </Key>
+          <Property Name="Operatorid" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Roleid" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Userid" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OperatorName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CodeNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Userid" />
+          </Key>
+          <Property Name="Userid" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CodeNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="SpellNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="CustomNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="StrokeNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="Sex" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="Birthday" Type="DateTime" Precision="0" />
+          <Property Name="Nation" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Diploma" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Officeid" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="VestDept" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Duty" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Role" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="LaborageNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ExamineMoney" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="RegisterLimitNo" Type="Int32" />
+          <Property Name="BespeakLimitNo" Type="Int32" />
+          <Property Name="PledgeMoney" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Workkind" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="PrescriptionRight" Type="Int32" Nullable="false" />
+          <Property Name="ExamineName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="StopFlag" Type="Int32" Nullable="false" />
+          <Property Name="StopOperator" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="StopDate" Type="DateTime" Precision="7" />
+          <Property Name="Remark" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="TELEPHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ClientEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Operator" EntityType="Self.Operator" />
+          <EntitySet Name="Users" EntityType="Self.Users" />
+          <EntitySet Name="Role" EntityType="ClientModel.Role" />
+          <EntitySet Name="Office" EntityType="ClientModel.Office" />
+          <EntitySet Name="Menu" EntityType="ClientModel.Menu" />
+          <EntitySet Name="OperatorMenuAuthority" EntityType="ClientModel.OperatorMenuAuthority" />
+          <AssociationSet Name="FK_OperatorMenuAuthority_Menu" Association="ClientModel.FK_OperatorMenuAuthority_Menu">
+            <End Role="Menu" EntitySet="Menu" />
+            <End Role="OperatorMenuAuthority" EntitySet="OperatorMenuAuthority" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="Roleid" />
+          </Key>
+          <Property Name="Roleid" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Role1" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CodeNo" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="SpellNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="CustomNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="StrokeNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Office">
+          <Key>
+            <PropertyRef Name="Officeid" />
+          </Key>
+          <Property Name="Officeid" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Office1" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CodeNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="SpellNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CustomNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="StrokeNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Department" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Parentid" Type="Int32" />
+          <Property Name="hasChild" Type="Int32" Nullable="false" />
+          <Property Name="BedAmount" Type="Int32" />
+          <Property Name="DiseaseArea" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="OfficeType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Workkind" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="LimitFund" Type="Int32" />
+          <Property Name="ServiceObject" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Link" Type="Int32" />
+          <Property Name="OfficeAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Explanation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="StopFlag" Type="Int32" Nullable="false" />
+          <Property Name="StopDate" Type="DateTime" Precision="3" />
+          <Property Name="StopOperator" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="position" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="Nodeid" />
+          </Key>
+          <Property Name="Nodeid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NodeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ParentNode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="isEndNode" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Pluginid" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Commentary" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Disporder" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="type" Type="Int32" Nullable="false" />
+          <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="IsChoose" Type="Boolean" />
+          <NavigationProperty Name="OperatorMenuAuthority" Relationship="ClientModel.FK_OperatorMenuAuthority_Menu" FromRole="Menu" ToRole="OperatorMenuAuthority" />
+        </EntityType>
+        <EntityType Name="OperatorMenuAuthority">
+          <Key>
+            <PropertyRef Name="Operatorid" />
+            <PropertyRef Name="Privid" />
+          </Key>
+          <Property Name="Operatorid" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Privid" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Nodeid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ParentNode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="isEndNode" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Menu" Relationship="ClientModel.FK_OperatorMenuAuthority_Menu" FromRole="OperatorMenuAuthority" ToRole="Menu" />
+        </EntityType>
+        <Association Name="FK_OperatorMenuAuthority_Menu">
+          <End Type="ClientModel.Menu" Role="Menu" Multiplicity="1" />
+          <End Type="ClientModel.OperatorMenuAuthority" Role="OperatorMenuAuthority" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu">
+              <PropertyRef Name="Nodeid" />
+            </Principal>
+            <Dependent Role="OperatorMenuAuthority">
+              <PropertyRef Name="Nodeid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ClientModelStoreContainer" CdmEntityContainer="ClientEntities">
+    <EntitySetMapping Name="Operator">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Operator)">
+        <MappingFragment StoreEntitySet="Operator">
+          <ScalarProperty Name="Operatorid" ColumnName="Operatorid" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Roleid" ColumnName="Roleid" />
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="CodeNo" ColumnName="CodeNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Users)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CodeNo" ColumnName="CodeNo" />
+          <ScalarProperty Name="SpellNo" ColumnName="SpellNo" />
+          <ScalarProperty Name="CustomNo" ColumnName="CustomNo" />
+          <ScalarProperty Name="StrokeNo" ColumnName="StrokeNo" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+          <ScalarProperty Name="Diploma" ColumnName="Diploma" />
+          <ScalarProperty Name="Officeid" ColumnName="Officeid" />
+          <ScalarProperty Name="VestDept" ColumnName="VestDept" />
+          <ScalarProperty Name="Duty" ColumnName="Duty" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="LaborageNo" ColumnName="LaborageNo" />
+          <ScalarProperty Name="ExamineMoney" ColumnName="ExamineMoney" />
+          <ScalarProperty Name="RegisterLimitNo" ColumnName="RegisterLimitNo" />
+          <ScalarProperty Name="BespeakLimitNo" ColumnName="BespeakLimitNo" />
+          <ScalarProperty Name="PledgeMoney" ColumnName="PledgeMoney" />
+          <ScalarProperty Name="Workkind" ColumnName="Workkind" />
+          <ScalarProperty Name="PrescriptionRight" ColumnName="PrescriptionRight" />
+          <ScalarProperty Name="ExamineName" ColumnName="ExamineName" />
+          <ScalarProperty Name="StopFlag" ColumnName="StopFlag" />
+          <ScalarProperty Name="StopOperator" ColumnName="StopOperator" />
+          <ScalarProperty Name="StopDate" ColumnName="StopDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="TELEPHONE" ColumnName="TELEPHONE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Role)">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Roleid" ColumnName="Roleid" />
+          <ScalarProperty Name="Role1" ColumnName="Role1" />
+          <ScalarProperty Name="CodeNo" ColumnName="CodeNo" />
+          <ScalarProperty Name="SpellNo" ColumnName="SpellNo" />
+          <ScalarProperty Name="CustomNo" ColumnName="CustomNo" />
+          <ScalarProperty Name="StrokeNo" ColumnName="StrokeNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Office">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Office)">
+        <MappingFragment StoreEntitySet="Office">
+          <ScalarProperty Name="Officeid" ColumnName="Officeid" />
+          <ScalarProperty Name="Office1" ColumnName="Office1" />
+          <ScalarProperty Name="CodeNo" ColumnName="CodeNo" />
+          <ScalarProperty Name="SpellNo" ColumnName="SpellNo" />
+          <ScalarProperty Name="CustomNo" ColumnName="CustomNo" />
+          <ScalarProperty Name="StrokeNo" ColumnName="StrokeNo" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Parentid" ColumnName="Parentid" />
+          <ScalarProperty Name="hasChild" ColumnName="hasChild" />
+          <ScalarProperty Name="BedAmount" ColumnName="BedAmount" />
+          <ScalarProperty Name="DiseaseArea" ColumnName="DiseaseArea" />
+          <ScalarProperty Name="OfficeType" ColumnName="OfficeType" />
+          <ScalarProperty Name="Workkind" ColumnName="Workkind" />
+          <ScalarProperty Name="LimitFund" ColumnName="LimitFund" />
+          <ScalarProperty Name="ServiceObject" ColumnName="ServiceObject" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="OfficeAddress" ColumnName="OfficeAddress" />
+          <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+          <ScalarProperty Name="StopFlag" ColumnName="StopFlag" />
+          <ScalarProperty Name="StopDate" ColumnName="StopDate" />
+          <ScalarProperty Name="StopOperator" ColumnName="StopOperator" />
+          <ScalarProperty Name="position" ColumnName="position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.Menu)">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="Nodeid" ColumnName="Nodeid" />
+          <ScalarProperty Name="NodeName" ColumnName="NodeName" />
+          <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+          <ScalarProperty Name="isEndNode" ColumnName="isEndNode" />
+          <ScalarProperty Name="Pluginid" ColumnName="Pluginid" />
+          <ScalarProperty Name="Commentary" ColumnName="Commentary" />
+          <ScalarProperty Name="Disporder" ColumnName="Disporder" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="IsChoose" ColumnName="IsChoose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OperatorMenuAuthority">
+      <EntityTypeMapping TypeName="IsTypeOf(ClientModel.OperatorMenuAuthority)">
+        <MappingFragment StoreEntitySet="OperatorMenuAuthority">
+          <ScalarProperty Name="Operatorid" ColumnName="Operatorid" />
+          <ScalarProperty Name="Privid" ColumnName="Privid" />
+          <ScalarProperty Name="Nodeid" ColumnName="Nodeid" />
+          <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+          <ScalarProperty Name="isEndNode" ColumnName="isEndNode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
